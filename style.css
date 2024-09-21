@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.title-block {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    top: 1rem; /* Adjust this to raise the grid */
+}
+
+.grid-item {
+    background-color: #333;
+    width: 100%;
+    padding-top: 100%; /* Maintain square aspect ratio */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.popup-box {
+    position: absolute;
+    background-color: black;
+    color: white;
+    border: 1px solid #555;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    overflow: auto;
+}
+
+.popup-box p {
+    margin: 0;
+}
+
+.popup-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.popup-box .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.popup-box .popup-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.popup-box .popup-button:hover {
+    background-color: #777;
+}
+
+.text-section {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Center the text at the bottom */
+}
+
+.text-section hr {
+    border: 1px solid white;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Adding 20 occurrences with background-image URLs */
+.grid-item:nth-child(1) {
+    background-image: url('images/1.jpg');
+}
+.grid-item:nth-child(2) {
+    background-image: url('images/2.jpg');
+}
+.grid-item:nth-child(3) {
+    background-image: url('images/3.jpg');
+}
+.grid-item:nth-child(4) {
+    background-image: url('images/4.jpg');
+}
+.grid-item:nth-child(5) {
+    background-image: url('images/5.jpg');
+}
+.grid-item:nth-child(6) {
+    background-image: url('images/6.jpg');
+}
+.grid-item:nth-child(7) {
+    background-image: url('images/7.jpg');
+}
+.grid-item:nth-child(8) {
+    background-image: url('images/8.jpg');
+}
+.grid-item:nth-child(9) {
+    background-image: url('images/9.jpg');
+}
+.grid-item:nth-child(10) {
+    background-image: url('images/10.jpg');
+}
+.grid-item:nth-child(11) {
+    background-image: url('images/11.jpg');
+}
+.grid-item:nth-child(12) {
+    background-image: url('images/12.jpg');
+}
+.grid-item:nth-child(13) {
+    background-image: url('images/13.jpg');
+}
+.grid-item:nth-child(14) {
+    background-image: url('images/14.jpg');
+}
+.grid-item:nth-child(15) {
+    background-image: url('images/15.jpg');
+}
+.grid-item:nth-child(16) {
+    background-image: url('images/16.jpg');
+}
+.grid-item:nth-child(17) {
+    background-image: url('images/17.jpg');
+}
+.grid-item:nth-child(18) {
+    background-image: url('images/18.jpg');
+}
+.grid-item:nth-child(19) {
+    background-image: url('images/19.jpg');
+}
+.grid-item:nth-child(20) {
+    background-image: url('images/20.jpg');
+}
