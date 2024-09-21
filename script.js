@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (rect.top + popupHeight > windowHeight) {
                 popup.style.top = `${windowHeight - popupHeight - 20}px`; // Position at the bottom if too tall
             } else {
-                popup.style.top = `${rect.top + window.scrollY}px`; // Default top position
+                popup.style.top = `${rect.top}px`; // Adjusted to fix scrolling issue
             }
         } else {
             console.error('Popup not found for:', popupId);
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Adjust popup position when scrolling
+    // Adjust popup position when scrolling (optional)
     window.addEventListener('scroll', function() {
         const activePopup = document.querySelector('.popup-box[style*="block"]');
         if (activePopup) {
@@ -85,14 +85,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 const popupHeight = activePopup.offsetHeight;
                 const windowHeight = window.innerHeight;
 
-                // Adjust popup position on scroll
+                // Adjust popup position on scroll (optional)
                 if (rect.top + popupHeight > windowHeight) {
                     activePopup.style.top = `${windowHeight - popupHeight - 20}px`;
                 } else {
-                    activePopup.style.top = `${rect.top + window.scrollY}px`;
+                    activePopup.style.top = `${rect.top}px`;
                 }
             }
         }
     });
 });
-
