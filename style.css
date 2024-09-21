@@ -135,62 +135,62 @@ h2 {
 
 /* Adding 20 occurrences with background-image URLs */
 .grid-item:nth-child(1) {
-    background-image: url('csmartinportfolio/Images & files/Inidentifiable/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Inidentifiable/Image%201.jpg');
 }
 .grid-item:nth-child(2) {
-    background-image: url('csmartinportfolio/Images & files/ILWT/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/ILWT/Image%201.jpg');
 }
 .grid-item:nth-child(3) {
-    background-image: url('csmartinportfolio/Images & files/Maison/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Maison/Image%201.jpg');
 }
 .grid-item:nth-child(4) {
-    background-image: url('csmartinportfolio/Images & files/Anthropos/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Anthropos/Image%201.jpg');
 }
 .grid-item:nth-child(5) {
-    background-image: url('csmartinportfolio/Images & files/Damnatorum/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Damnatorum/Image%201.jpg');
 }
 .grid-item:nth-child(6) {
-    background-image: url('csmartinportfolio/Images & files/Ombre/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Ombre/Image%201.jpg');
 }
 .grid-item:nth-child(7) {
-    background-image: url('csmartinportfolio/Images & files/Vie/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Vie/Image%201.jpg');
 }
 .grid-item:nth-child(8) {
-    background-image: url('csmartinportfolio/Images & files/Coût/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Coût/Image%201.jpg');
 }
 .grid-item:nth-child(9) {
-    background-image: url('csmartinportfolio/Images & files/Rapaces/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Rapaces/Image%201.jpg');
 }
 .grid-item:nth-child(10) {
-    background-image: url('csmartinportfolio/Images & files/Macchabée/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Macchabée/Image%201.jpg');
 }
 .grid-item:nth-child(11) {
-    background-image: url('csmartinportfolio/Images & files/Weakness/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Weakness/Image%201.jpg');
 }
 .grid-item:nth-child(12) {
-    background-image: url('csmartinportfolio/Images & files/Chroniques/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Chroniques/Image%201.jpg');
 }
 .grid-item:nth-child(13) {
-    background-image: url('csmartinportfolio/Images & files/On n y/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/On n y/Image%201.jpg');
 }
 .grid-item:nth-child(14) {
-    background-image: url('csmartinportfolio/Images & files/Anges/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Anges/Image%201.jpg');
 }
 .grid-item:nth-child(15) {
-    background-image: url('csmartinportfolio/Images & files/Ca va/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Ca va/Image%201.jpg');
 }
 .grid-item:nth-child(16) {
-    background-image: url('csmartinportfolio/Images & files/Lueur/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Lueur/Image%201.jpg');
 }
 .grid-item:nth-child(17) {
-    background-image: url('csmartinportfolio/Images & files/Humanos/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Humanos/Image%201.jpg');
 }
 .grid-item:nth-child(18) {
-    background-image: url('csmartinportfolio/Images & files/Monde/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Monde/Image%201.jpg');
 }
 .grid-item:nth-child(19) {
-    background-image: url('csmartinportfolio/Images & files/Show/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Show/Image%201.jpg');
 }
 .grid-item:nth-child(20) {
-    background-image: url('csmartinportfolio/Images & files/Corn/Image 1.jpg');
+    background-image: url('csmartinportfolio/Images%20&%20files/Corn/Image%201.jpg');
 }
