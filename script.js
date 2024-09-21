@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (rect.top + popupHeight > windowHeight) {
                 popup.style.top = `${windowHeight - popupHeight - 20}px`; // Position at the bottom if too tall
             } else {
-                popup.style.top = `${rect.top}px`; // Adjusted to fix scrolling issue
+                popup.style.top = `${rect.top}px`; // Default top position
             }
         } else {
             console.error('Popup not found for:', popupId);
@@ -72,26 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     box.style.display = 'none';
                 }
             });
-        }
-    });
-
-    // Adjust popup position when scrolling (optional)
-    window.addEventListener('scroll', function() {
-        const activePopup = document.querySelector('.popup-box[style*="block"]');
-        if (activePopup) {
-            const activeGridItem = document.querySelector(`.grid-item[data-popup="${activePopup.id}"]`);
-            if (activeGridItem) {
-                const rect = activeGridItem.getBoundingClientRect();
-                const popupHeight = activePopup.offsetHeight;
-                const windowHeight = window.innerHeight;
-
-                // Adjust popup position on scroll (optional)
-                if (rect.top + popupHeight > windowHeight) {
-                    activePopup.style.top = `${windowHeight - popupHeight - 20}px`;
-                } else {
-                    activePopup.style.top = `${rect.top}px`;
-                }
-            }
         }
     });
 });
