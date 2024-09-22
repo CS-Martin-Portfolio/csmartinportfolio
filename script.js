@@ -55,17 +55,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const titleImage = document.querySelector('.title-block img'); // Target the title image
     const gridSection = document.getElementById('grid-section');   // Target the grid section
 
-    if (titleImage && gridSection) {
-        // Add event listener for the image click/touch
-        titleImage.addEventListener('click', function() {
-            gridSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to grid with smooth animation
-        });
 
-        // Add event listener for touchstart (mobile devices)
-        titleImage.addEventListener('touchstart', function() {
+    if (titleImage && gridSection) {
+        const scrollToGrid = (event) => {
+            event.preventDefault(); // Prevent any default action
             gridSection.scrollIntoView({ behavior: 'smooth' });
-        });
+        };
+
+        titleImage.addEventListener('click', scrollToGrid);
+        titleImage.addEventListener('touchstart', scrollToGrid);
     }
 });
 
-});
+        })
