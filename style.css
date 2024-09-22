@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -19,6 +19,18 @@ h1 {
 h2 {
     margin: 0;
     font-weight: normal;
+}
+
+hr {
+    margin: 1rem 0; /* Controls the space around the hr */
+}
+
+ul {
+    margin-bottom: 1rem; /* Add some space below the ul */
+}
+
+.text-section p {
+    margin-top: 1rem; /* Controls the space between text sections */
 }
 
 .grid-container {
@@ -189,7 +201,7 @@ h2 {
     background-image: url('Images%20&%20files/Monde/Image%201.png');
 }
 .grid-item:nth-child(19) {
-    background-image: url('Images%20&%20files/Show/Image%201.png');
+    background-image: url('Images%20&%20files/Show/Image%201.jpg');
 }
 .grid-item:nth-child(20) {
     background-image: url('Images%20&%20files/Corn/Image%201.jpg');
