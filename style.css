@@ -29,6 +29,17 @@ ul {
     margin-bottom: 1rem; /* Add some space below the ul */
 }
 
+a {
+    color: #ADD8E6; /* Light blue */
+    text-decoration: none; /* Remove underline if you don't want it */
+}
+
+a:hover {
+    color: #B0E0E6; /* Even lighter blue on hover, optional */
+    text-decoration: underline; /* Underline on hover for better visibility, optional */
+}
+
+
 .text-section p {
     margin-top: 1rem; /* Controls the space between text sections */
 }
@@ -205,4 +216,7 @@ ul {
 }
 .grid-item:nth-child(20) {
     background-image: url('Images%20&%20files/Corn/Image%201.jpg');
+}
+.title-block img {
+    cursor: pointer;
 }
