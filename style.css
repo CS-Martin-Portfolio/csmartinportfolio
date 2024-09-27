@@ -40,6 +40,7 @@ a:hover {
 }
 
 
+
 .text-section p {
     margin-top: 1rem; /* Controls the space between text sections */
 }
@@ -64,6 +65,8 @@ a:hover {
     cursor: pointer;
     background-size: cover;
     background-position: center;
+    transition: filter 0.3s ease; /* Smooth transition effect */
+    filter: grayscale(100%); /* Initial grayscale effect */
 }
 
 .overlay {
@@ -79,6 +82,31 @@ a:hover {
 
 .grid-item:hover .overlay {
     opacity: 1;
+}
+
+
+/* Remove grayscale effect on hover */
+.grid-item:hover {
+    filter: grayscale(0%); /* Remove grayscale effect on hover */
+}
+
+/* Define hover color for specific classes */
+.black-hover {
+    color: black;
+    font-weight: bold; /* Default black */
+}
+.red-hover {
+    color: #f3957e;
+
+}
+.blue-hover {
+    color: indianred;
+    font-weight: bold; /* Default blue */
+}
+
+/* Hover effects */
+.overlay:hover {
+    opacity: 0.8; /* Example of hover effect, adjust as needed */
 }
 
 .popup-box {
@@ -216,7 +244,4 @@ a:hover {
 }
 .grid-item:nth-child(20) {
     background-image: url('Images%20&%20files/Corn/Image%201.jpg');
-}
-.title-block img {
-    cursor: pointer;
 }
