@@ -186,7 +186,7 @@ a:hover {
 
 /* Adding 20 occurrences with background-image URLs */
 .grid-item:nth-child(1) {
-    background-image: url('Images%20&%20files/Inidentifiable/Image%201.jpeg');
+    background-image: url('Images%20&%20files/Inidentifiable/Image%201.jpg');
 }
 .grid-item:nth-child(2) {
     background-image: url('Images%20&%20files/ILWT/Image%201.jpg');
