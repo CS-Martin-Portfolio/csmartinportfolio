@@ -6,10 +6,25 @@ body {
     color: white;
 }
 
-.title-block {
+.title-block img {
     text-align: center;
     padding: 2rem 0;
     margin-bottom: 1rem;
+  width: 100vw; /* Ensure the image takes the full width of its container */
+  max-height: 70vh; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover ensures the image fills the area without stretching */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image */
+}
+
+@media (max-width: 768px) {
+  .title-block img {
+    width: 100vw; /* Use full viewport width on mobile */
+    height: 100vh; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover ensures the image fills the area without stretching */
+  }
+}
+
 }
 
 h1 {
@@ -172,16 +187,16 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+/* Media query to ensure it stays at 4 columns on mobile */
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns on smaller screens */
+  }
 }
 
-@media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
+button {
+  width: auto; /* Let buttons adjust naturally */
+  font-size: 18px; /* Consistent font size */
 }
 
 /* Adding 20 occurrences with background-image URLs */
