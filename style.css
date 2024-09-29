@@ -6,25 +6,10 @@ body {
     color: white;
 }
 
-.title-block img {
+.title-block {
     text-align: center;
     padding: 2rem 0;
     margin-bottom: 1rem;
-  width: 100vw; /* Ensure the image takes the full width of its container */
-  max-height: 70vh; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover ensures the image fills the area without stretching */
-  display: block; /* Center the image */
-  margin: 0 auto; /* Center the image */
-}
-
-@media (max-width: 768px) {
-  .title-block img {
-    width: 100vw; /* Use full viewport width on mobile */
-    height: 100vh; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover ensures the image fills the area without stretching */
-  }
-}
-
 }
 
 h1 {
@@ -54,8 +39,6 @@ a:hover {
     text-decoration: underline; /* Underline on hover for better visibility, optional */
 }
 
-
-
 .text-section p {
     margin-top: 1rem; /* Controls the space between text sections */
 }
@@ -63,7 +46,7 @@ a:hover {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px; /* Ensure consistent gap between grid items */
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
@@ -99,7 +82,6 @@ a:hover {
     opacity: 1;
 }
 
-
 /* Remove grayscale effect on hover */
 .grid-item:hover {
     filter: grayscale(0%); /* Remove grayscale effect on hover */
@@ -110,10 +92,11 @@ a:hover {
     color: black;
     font-weight: bold; /* Default black */
 }
+
 .red-hover {
     color: #f3957e;
-
 }
+
 .blue-hover {
     color: indianred;
     font-weight: bold; /* Default blue */
@@ -187,16 +170,51 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-/* Media query to ensure it stays at 4 columns on mobile */
+/* Mobile Optimizations */
 @media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(4, 1fr); /* Keep 4 columns on smaller screens */
-  }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        gap: 15px; /* Ensure consistent spacing */
+    }
+
+    .title-block {
+        padding: 1.5rem 0; /* Adjust padding for smaller screens */
+    }
+
+    .grid-item {
+        padding-top: 100%; /* Maintain square aspect ratio */
+    }
+    
+    .popup-box {
+        position: fixed; /* Keep popup fixed on mobile */
+        left: 50%;
+        top: 20%; /* Adjust top spacing */
+        transform: translate(-50%, 0); /* Center horizontally */
+        max-width: 90vw; /* Ensure popup fits within the viewport */
+    }
 }
 
-button {
-  width: auto; /* Let buttons adjust naturally */
-  font-size: 18px; /* Consistent font size */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column for extra small screens */
+        gap: 10px;
+    }
+
+    .grid-item {
+        padding-top: 100%; /* Maintain square aspect ratio */
+    }
+    
+    .popup-box {
+        position: fixed;
+        left: 50%;
+        top: 10%; /* Slightly higher for smaller screens */
+        transform: translate(-50%, 0);
+        max-width: 90vw;
+    }
+
+    body {
+        font-size: 0.9em; /* Slightly smaller text for mobile */
+    }
 }
 
 /* Adding 20 occurrences with background-image URLs */
